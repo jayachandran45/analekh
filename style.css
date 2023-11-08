@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+:root{}
+
+.item{
+    position: relative;
+
+}
+span{
+    position: absolute;
+    top :.5em;
+    left: .5em;
+    border: 2px solid black;
+    border-top: none;
+    border-bottom: none;
+    padding: 0 .3rem;
+    
+}
+
+input{
+    font-size: 1rem;
+    padding: .5em;
+    margin-bottom: 1em;
+}
+input:focus{
+    outline: none;
+}
+
+
+input:focus ~ span {
+    top: -10px;
+    left: 0.5rem;
+    background-color: rebeccapurple;
+  }
+
+.span{
+    top: -10px;
+    left: 0.5rem;
+    background-color: rebeccapurple;
+}
+
+@media only screen and (min-width: 600px) {
+    body{
+        background-color: red;
+    }
+  }
